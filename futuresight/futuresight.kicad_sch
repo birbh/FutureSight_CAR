@@ -1,0 +1,152 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "7fa3a736-d5bd-4ca5-93b9-fcf4970e6e14")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 19.05 113.03)
+		(size 152.4 80.01)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5b221cfe-41e5-42d0-93dc-5a708433fcf7")
+		(property "Sheetname" "duos_interface"
+			(at 19.05 112.3184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "duos_interface.kicad_sch"
+			(at 19.05 193.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "futuresight"
+				(path "/7fa3a736-d5bd-4ca5-93b9-fcf4970e6e14"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 179.07 20.32)
+		(size 100.33 139.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "619b2306-b7c1-45de-b68c-3b5eeb6d7eb6")
+		(property "Sheetname" "safe_shut"
+			(at 179.07 19.6084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "safe_shut.kicad_sch"
+			(at 179.07 160.6046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "futuresight"
+				(path "/7fa3a736-d5bd-4ca5-93b9-fcf4970e6e14"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 19.05 17.78)
+		(size 151.13 88.9)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a2ed8af9-9eff-4a4e-8601-8709accd7a4d")
+		(property "Sheetname" "Power Control"
+			(at 19.05 17.0684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_control.kicad_sch"
+			(at 19.05 107.2646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "futuresight"
+				(path "/7fa3a736-d5bd-4ca5-93b9-fcf4970e6e14"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
