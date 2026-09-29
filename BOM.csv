@@ -1,0 +1,29 @@
+Designator,Footprint,Quantity,Value,Component,Price,Link
+C_BOOT1,0603,1,0.1µF,capacitor_x7r (16v or 25v),$.11,https://shorturl.at/1SRxo
+C_COMP1,0603,1,3.3nF,capacitor_x7r (50v),$.12,https://h1.nu/1z8wH
+C_IN1,1206,1,10µF,capacitor_x7r(50v),$.71,https://shorturl.at/bqJFe
+C_IN2,CP_Elec_6.3x5.8,1,47µF,capacitor_aluminium-elec(50v),$.84,https://h1.nu/1z8y9
+C_MPU1,0603,1,0.1µF 10V,capacitor(10v),$.85,https://h1.nu/1z8z7
+"C_OUT1, C_OUT2",1206,2,22µF,capacitor_x7r(10v or 16v),$1.72,https://h1.nu/1z8CW
+C_SUPER1,CP_Radial_D13.0mm_P5.00mm,1,5.5V 4.0F,Supercapacitor,$.87,
+D1,DIOM4336X265N,1,SMBJ24A, Unidirectional TVS Diode,$.88,
+D2,D_SMA_Handsoldering,1,40V 3A,,$.89,
+"D_BACKUP1, D_MAIN1",D_SMC_Handsoldering,2,40V 3A,,$.90,
+D_STAT1,0603,1,LED_Small,Led-red,$.91,
+F1,1812,1,Polyfuse,,$.92,
+"J1, J2",PinSocket_2x13_P2.54mm_Vertical,1,Conn_02x13_Odd_Even,Milk-V-Duo-S dev board,$.93,
+J3,"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",1,Conn_01x02,,$.94,
+L1,L_Bourns-SRN8040_8x8.15mm,1,15µH,Inductor,$.95,
+Q1,SOT-23,1,AO3401A,Mosfet,$.96,
+R1,0603,1,53.6kΩ,Resistor,$.97,
+R2,0603,1,10.2kΩ,Resistor,$.98,
+R_CHARGE1,2512,1,10Ω 1W,Resistor,$.99,
+"R_COMP1, R_GATE1, R_SENSE1, R_SENSE2",0603,4,10kΩ,Resistor,$.100,
+"R_I2C1, R_I2C2",0603,2,4.7kΩ,Resistor,$.101,
+R_LED1,0603,1,330Ω,Resistor,$.102,
+R_RT1,0603,1,162kΩ,Resistor,$.103,
+SW1,SW_SPST_B3S-1000,1,SW_Push,Push Button Switch(with cap),$.104,
+U1,TI_SO-PowerPAD-8_ThermalVias,1,TPS54360DDA,Voltage regulator,$.105,
+U_MPU1,InvenSense_QFN-24_4x4mm_P0.5mm,1,MPU-6050,Accelererometer chip,$.106,
+,,1,IPEX1 Connector,Bluetooth/WiFi Dual Bands Antenna ,$.107,
+,,,,,,
