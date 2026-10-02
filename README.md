@@ -145,6 +145,8 @@ I have kept the ipex connector cable with wifi+bluetooth antenna in the pcb,BOM 
 <img width="1045" height="536" alt="Screenshot 2026-10-02 at 6 42 15 PM" src="https://github.com/user-attachments/assets/c155f6a4-0e33-41c7-bf8f-f2ad3fa92d6a" />
 <img width="671" height="450" alt="Screenshot 2026-10-02 at 6 46 31 PM" src="https://github.com/user-attachments/assets/793f0c19-2b28-4be1-adcb-33df0abc25c6" />
 <img width="622" height="347" alt="Screenshot 2026-10-02 at 6 46 49 PM" src="https://github.com/user-attachments/assets/ce54e2de-db3a-4f18-9b74-1cefbd538119" />
+<img width="704" height="393" alt="Screenshot 2026-10-02 at 11 10 06 PM" src="https://github.com/user-attachments/assets/3bbb95a9-0ce7-4210-abbc-228ace0bbf13" />
+<img width="652" height="362" alt="Screenshot 2026-10-02 at 11 11 20 PM" src="https://github.com/user-attachments/assets/19b7a7fa-e682-4cfe-962f-79a9d5b4b9b0" />
 
 
 
