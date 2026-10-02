@@ -34,6 +34,94 @@ Flash the official MIlk-V OS image into your SDcard. Then connect them via onboa
 ### Getting the data:
 For now you can extract your dashcam videos by unplugging the Sd-card from the dashcam and plugging it in the sd card reader in pc,mobile or any other mountable device. And also you can directly connect your milk v type c port into your pc and access your data. But in future i plan to make a native app for the dashcam and use the inbuilt wifi antenna thing to sync the data. Also i plan to make the app fully run locally in users’ devices, protecting the privacy of the user.  
 
+
+## Milk-V Duo S setup(in detail):
+Once your Pcb is soldered and milk-v duo-s is mounted, follow these steps to configure dashcam:::
+
+1. Flash the OS:
+  - Download the official Milk-V Duo S Linux image from milk v [Github repo](https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases)
+  - then flash the image to a micros card using tools like Rufus or balenaEtcher or any other image flashing software.
+  - insert the micro sd card into duo s and power it using the USB-C port(note: don't apply the car 12V power yet.)
+
+2. Install the required drivers:
+  i. For Windows users:
+    Windows often fails to recognize the board automatically. You need to tell it to treat the USB connection as a network card.
+    - Open Device Manager: Look under Other devices for an unknown device (often labeled Serial or RNDIS).
+    - Update Driver: Right-click it, select Update driver, and choose Browse my computer for drivers.
+    - Select from List: Click Let me pick from a list of available drivers on my computer.
+    - Choose Network Adapters: Select Network adapters from the list, choose Microsoft as the manufacturer, and select Remote NDIS Compatible Device (or USB RNDIS Adapter).
+    - Finish: Click Next and ignore any warning prompts.
+    
+  ii. For macos/Linux users:
+    Linux and Mac usually recognize the RNDIS interface automatically, but you need to check if the network interface is active.
+    - Open Terminal: Run ip a (Linux) or ifconfig (Mac).
+    - Look for a new interface: You should see a new network interface (usually named something like usb0 or enX).
+    
+3. Setup SSH into the board:
+  - Connect the Milk-V Duo S into your computer after installing required drivers.It will mount as a virtual network adapter(RNDIS).
+  - Open your terminal and SSH into your default IP adress `192.168.42.1`.
+  - ```bash
+    ssh root@192.168.42.1
+    ```
+  - the default password is typically `milkv`
+
+4. Install dependencies:
+  Depending on specific os image you flashed, use the system package manager to install reqd video and python packages:
+  - ```bash
+    apt-get update
+    sudo apt install ffmpeg
+    sudo apt install python3 python3-pip
+    pip3 install smbus2
+    ```
+5. Create the required storage directories:
+  - ```bash
+    mkdir -p/mnt/sdcard/dashcam/normal/
+    mkdir -p/mnt/sdcard/dashcam/events/
+    
+6. Transfer the python script(firmware):
+  From your computer use SCP(secure copy) protocol to transfer your finalized firmware firmware.py script into root folder of Milk-V Duo S:
+  ```bash
+scp firmware.py root@192.168.42.1:/root/
+```
+
+7. Create auto-start service when boot:
+   The dashcam must boot on its own when car turns on. So use systemd to make script aut run in the bg:
+   - Create the service file:
+   ```bash
+   vi /etc/systemd/system/dashcam.service
+   ```
+   - Paste the exact configuration into the file:
+   ```bash
+      [Unit]
+      Description=Dashcam Auto recors svc
+      After=systemd-modules-load.service
+      
+      [Service]
+      Type=simple
+      ExecStart=/usr/bin/python3 /root/firmware.py
+      Restart=always
+      RestartSec=3
+      
+      [Install]
+      WantedBy=multi-user.target
+   ```
+  - Save the file and exit.
+
+8. Enable and test:
+  - Enable the service so it starts automatically on every boot.Also start manually to test it now:
+    ```bash
+    systemctl enable dashcam.service
+    systemctl start dashcam.service
+    ```
+  - Verify that the camera is recording and G-sensor is polling by checking the status:
+    ```bash
+    systemctl status dashcam.service
+    ```
+  - Now at this point the usb-c cable can be disconnected and your dashcam is ready to be mounted inside the car Cigarette Lighter 12V port.... YAYYYYYY!!! les goooooooo!! 
+  
+
+
+
 ## Future changes:
 I have kept the ipex connector cable with wifi+bluetooth antenna in the pcb,BOM and CAD but that is completely optional for now as the app and the wifi setup hasnt been added in the firmware yet. In future it will be added. Also the app for the dashcam isnt functional yet and will be updated in future.
 
