@@ -539,7 +539,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "../pcb/pcb_no_components.step",
+      "step": "../CAD/pcb/pcb_no_components.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -674,7 +674,7 @@
         "uuid": "7fa3a736-d5bd-4ca5-93b9-fcf4970e6e14"
       }
     ],
-    "used_designators": "R1-5,Q1,D1-4,F1-2,C_OUT1-2,#PWR1,R_SENSE2,R_RT1,C1-4,C_COMP1,C_IN1-2,R_CHARGE1,R_GATE1,C_BOOT1,#FLG1-6,D_BACKUP1,J1-3,SW1,R_I2C2,U1-2,R_COMP1,L1,D_MAIN1,H1-4",
+    "used_designators": "R1-5,Q1,D1-4,F1-2,#PWR1,C_OUT1-2,R_SENSE2,R_RT1,C1-4,C_COMP1,C_IN1-2,R_CHARGE1,R_GATE1,C_BOOT1,#FLG1-6,D_BACKUP1,J1-3,SW1,R_I2C2,U1-2,R_COMP1,L1,D_MAIN1,H1-4",
     "variants": []
   },
   "sheets": [

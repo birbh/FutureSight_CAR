@@ -23,7 +23,7 @@ crash_thresh=1.7
 
 # storage handle datas
 duration_chunk= 180 #3mins
-max_storage_mb= 4000 # 10gigs max payload for normal footages 
+max_storage_mb= 4000 # 4gigs max payload for normal footages 
 
 # global ststes:
 event_happ=False

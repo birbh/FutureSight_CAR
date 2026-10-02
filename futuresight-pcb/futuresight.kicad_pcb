@@ -8885,9 +8885,9 @@
 				(xyz -0 -0 -0)
 			)
 		)
-		(model "/Users/bir_65/Downloads/milkv-duo duo-files main duo-s/hardware/duo_s_pcb_3d.stp"
+		(model "${KIPRJMOD}/milk-v/duo_s_pcb_3d.step"
 			(offset
-				(xyz -2.95 -30.47 -5)
+				(xyz -2.95 -30.48 -5)
 			)
 			(scale
 				(xyz 1 1 1)
